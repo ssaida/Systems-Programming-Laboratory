@@ -1,0 +1,42 @@
+read_mat MAT_A, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+print_mat MAT_A
+
+read_mat MAT_B, 1.5, 2.5, 3.5, 4.5, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2
+print_mat MAT_B
+
+add_mat MAT_A, MAT_B, MAT_C
+print_mat MAT_C
+
+sub_mat MAT_A, MAT_B, MAT_D
+print_mat MAT_D
+
+
+read_mat MAT_E, 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1 /* Identity matrix /
+read_mat MAT_F, 1,2,3,4, 5,6,7,8, 9,1,2,3, 4,5,6,7
+mul_mat MAT_E, MAT_F, MAT_A / MAT_A should become MAT_F */
+print_mat MAT_A
+
+mul_mat MAT_F, MAT_F, MAT_B /* MAT_B = MAT_F * MAT_F */
+print_mat MAT_B
+
+scalar_mul MAT_A, 2.0, MAT_A
+print_mat MAT_A
+
+trans_mat MAT_B, MAT_C
+print_mat MAT_C
+print_mat MAT_B /* MAT_B should remain unchanged */
+
+
+read_mat G_MAT, 1, 2
+read_mat a_mat, 1
+do_it MAT_A, MAT_B, MAT_C
+Add_Mat MAT_A, MAT_B, MAT_C
+read_mat MAT_A, abc, 123
+read_mat MAT_A, 1, 2, 3,
+print_mat MAT_A,
+trans_mat MAT_A MAT_B
+sub_mat MAT_A, , MAT_B, MAT_C
+mul_scalar MAT_A, MAT_B, MAT_C
+now stop
+
+stop

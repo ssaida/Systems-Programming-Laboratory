@@ -1,0 +1,161 @@
+Matrix calculator ready for action.
+
+ Enter a command:
+> Command entered: read_mat MAT_A, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+
+ Enter a command:
+> Command entered: print_mat MAT_A
+   1.00    2.00    3.00    4.00 
+   5.00    6.00    7.00    8.00 
+   9.00   10.00   11.00   12.00 
+  13.00   14.00   15.00   16.00 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: read_mat MAT_B, 1.5, 2.5, 3.5, 4.5, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2
+
+ Enter a command:
+> Command entered: print_mat MAT_B
+   1.50    2.50    3.50    4.50 
+   0.00    0.00    0.00    0.00 
+   1.00    1.00    1.00    1.00 
+   2.00    2.00    2.00    2.00 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: add_mat MAT_A, MAT_B, MAT_C
+
+ Enter a command:
+> Command entered: print_mat MAT_C
+   2.50    4.50    6.50    8.50 
+   5.00    6.00    7.00    8.00 
+  10.00   11.00   12.00   13.00 
+  15.00   16.00   17.00   18.00 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: sub_mat MAT_A, MAT_B, MAT_D
+
+ Enter a command:
+> Command entered: print_mat MAT_D
+  -0.50   -0.50   -0.50   -0.50 
+   5.00    6.00    7.00    8.00 
+   8.00    9.00   10.00   11.00 
+  11.00   12.00   13.00   14.00 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: read_mat MAT_E, 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1 /* Identity matrix /
+
+ Enter a command:
+> Command entered: read_mat MAT_F, 1,2,3,4, 5,6,7,8, 9,1,2,3, 4,5,6,7
+
+ Enter a command:
+> Command entered: mul_mat MAT_E, MAT_F, MAT_A / MAT_A should become MAT_F */
+
+ Enter a command:
+> Command entered: print_mat MAT_A
+   1.00    2.00    3.00    4.00 
+   5.00    6.00    7.00    8.00 
+   9.00   10.00   11.00   12.00 
+  13.00   14.00   15.00   16.00 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: mul_mat MAT_F, MAT_F, MAT_B /* MAT_B = MAT_F * MAT_F */
+
+ Enter a command:
+> Command entered: print_mat MAT_B
+   1.50    2.50    3.50    4.50 
+   0.00    0.00    0.00    0.00 
+   1.00    1.00    1.00    1.00 
+   2.00    2.00    2.00    2.00 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: scalar_mul MAT_A, 2.0, MAT_A
+
+ Enter a command:
+> Command entered: print_mat MAT_A
+   2.00    4.00    6.00    8.00 
+  10.00   12.00   14.00   16.00 
+  18.00   20.00   22.00   24.00 
+  26.00   28.00   30.00   32.00 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: trans_mat MAT_B, MAT_C
+
+ Enter a command:
+> Command entered: print_mat MAT_C
+   1.50    0.00    1.00    2.00 
+   2.50    0.00    1.00    2.00 
+   3.50    0.00    1.00    2.00 
+   4.50    0.00    1.00    2.00 
+
+ Enter a command:
+> Command entered: print_mat MAT_B /* MAT_B should remain unchanged */
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: read_mat G_MAT, 1, 2
+
+ Enter a command:
+> Command entered: read_mat a_mat, 1
+
+ Enter a command:
+> Command entered: do_it MAT_A, MAT_B, MAT_C
+
+ Enter a command:
+> Command entered: Add_Mat MAT_A, MAT_B, MAT_C
+
+ Enter a command:
+> Command entered: read_mat MAT_A, abc, 123
+
+ Enter a command:
+> Command entered: read_mat MAT_A, 1, 2, 3,
+
+ Enter a command:
+> Command entered: print_mat MAT_A,
+
+ Enter a command:
+> Command entered: trans_mat MAT_A MAT_B
+
+ Enter a command:
+> Command entered: sub_mat MAT_A, , MAT_B, MAT_C
+
+ Enter a command:
+> Command entered: mul_scalar MAT_A, MAT_B, MAT_C
+
+ Enter a command:
+> Command entered: now stop
+
+ Enter a command:
+> Command entered: 
+
+ Enter a command:
+> Command entered: stop
+
+The program is ending its operation..

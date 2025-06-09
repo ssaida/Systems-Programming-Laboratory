@@ -1,0 +1,8 @@
+Please enter 25 integers between 1 and 25 (separated by spaces):
+Input matrix:
+  11  24   7  20   3
+   4  12  25   8  16
+  17   5  13  21   9
+  10  18   1  14  22
+  23   6  19   2  15
+This is a basic magic square.
