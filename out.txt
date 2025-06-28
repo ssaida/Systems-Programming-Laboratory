@@ -1,0 +1,4 @@
+------------------
+Total Spaces: 52
+Total Tabs: 25
+Total lines: 29
