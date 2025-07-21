@@ -1,24 +1,27 @@
-all: gcd logic loop-a series stars week3 while min reverse size seven
-
+all: square-root max-four day-in-week average loops gcd tutorial series stars min palindrome parallelogram triangle
+square-root: square-root.c
+	gcc -ansi -pedantic -Wall square-root.c -o square-root -lm
+max-four: max-four.c
+	gcc -ansi -pedantic -Wall max-four.c -o max-four
+day-in-week: day-in-week.c
+	gcc -ansi -pedantic -Wall day-in-week.c -o day-in-week
+average: average.c
+	gcc -ansi -pedantic -Wall average.c -o average
+loops: loops.c
+	gcc -ansi -pedantic -Wall loops.c -o loops
 gcd: gcd.c
-	gcc -ansi -pedantic -Wall -g gcd.c -o gcd
-logic: logic.c
-	gcc -ansi -pedantic -Wall -g logic.c -o logic -lm
-loop-a: loop-a.c
-	gcc -ansi -pedantic -Wall -g loop-a.c -o loop-a
+	gcc -ansi -pedantic -Wall gcd.c -o gcd
+tutorial: tutorial.c
+	gcc -ansi -pedantic -Wall tutorial.c -o tutorial
 series: series.c
-	gcc -ansi -pedantic -Wall -g series.c -o series
+	gcc -ansi -pedantic -Wall series.c -o series
 stars: stars.c
-	gcc -ansi -pedantic -Wall -g stars.c -o stars
-week3: week3.c
-	gcc -ansi -pedantic -Wall -g week3.c -o week3 
-while: while.c
-	gcc -ansi -pedantic -Wall -g while.c -o while
+	gcc -ansi -pedantic -Wall stars.c -o stars
 min: min.c
-	gcc -ansi -pedantic -Wall -g min.c -o min
-reverse: reverse.c
-	gcc -ansi -pedantic -Wall -g reverse.c -o reverse
-size: size.c
-	gcc -ansi -pedantic -Wall -g size.c -o size
-seven: seven.c
-	gcc -ansi -pedantic -Wall -g seven.c -o seven
+	gcc -ansi -pedantic -Wall min.c -o min
+palindrome: palindrome.c
+	gcc -ansi -pedantic -Wall palindrome.c -o palindrome
+parallelogram: parallelogram.c
+	gcc -ansi -pedantic -Wall parallelogram.c -o parallelogram
+triangle: triangle.c
+	gcc -ansi -pedantic -Wall triangle.c -o triangle

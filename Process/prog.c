@@ -2,7 +2,7 @@
  * prog.c
  *
  *  Created on: Jun 22, 2025
- *      Author: user
+ *      Author: Samer Saida
  */
 
 #include <stdio.h>

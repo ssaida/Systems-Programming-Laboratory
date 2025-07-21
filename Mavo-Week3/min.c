@@ -1,24 +1,26 @@
 /*
  * min.c
  *
- *  Created on: Jun 4, 2025
+ *  Created on: Jul 10, 2025
  *      Author: user
  */
 
 #include <stdio.h>
 
-int main(void){
-	int num, min = 0;
-	printf("Enter a number:\n");
-	scanf("%d", &num);
-
-	while(num < 0){
-		if (num > min)
-			min = num;
-		printf("Enter another number:\n");
-		scanf("%d", &num);
+int main(){
+	int n, min;
+	printf("Enter positive numbers:\n");
+	scanf("%d", &n);
+	min = n;
+	while(n > 0){
+		scanf("%d", &n);
+		if(n < 0)
+			break;
+		if(n < min)
+			min = n;
 	}
-	printf("Min number is: %d", min);
-
+	printf("Min: %d\n", min);
 	return 0;
 }
+
+
