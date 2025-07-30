@@ -1,10 +1,10 @@
 /*
  * ex1.c
  *
- *  Created on: Jul 7, 2025
+ *  Created on: Jul 28, 2025
  *      Author: user
  */
-
+/* Week 2 ex 1 */
 
 #include <stdio.h>
 
@@ -20,4 +20,7 @@ int main()
 	printf("The average of the numbers is: %f\n", sum/3.0);
 	return 0;
 }
+
+
+
 

@@ -1,8 +1,15 @@
 /*
  * data.h
  *
- *  Created on: Jun 22, 2025
- *      Author: user
+ *  Created on: Jul 24, 2025
+ *      Author: Samer Saida
  */
-#define SIZE 5
-#define PW 2
+
+#ifndef DATA_H_
+#define DATA_H_
+
+#define size 5
+#define pw 3
+
+
+#endif /* DATA_H_ */

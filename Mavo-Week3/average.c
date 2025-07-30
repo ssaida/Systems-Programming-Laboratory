@@ -1,27 +1,21 @@
 /*
  * average.c
  *
- *  Created on: Jul 8, 2025
+ *  Created on: Jul 29, 2025
  *      Author: user
  */
-
 #include <stdio.h>
 
-#define MAX_INPUT 10
+int main(){
+	double num, sum = 0, avg;
+	int count = 0;
 
-int main(void){
-	double x, sum, avrg;
-	int c = 0;
-	sum = 0;
-
-	while(c < MAX_INPUT){
-		scanf("%lf", &x);
-		sum += x;
-		c++;
+	while(count < 5){
+		scanf("%lf", &num);
+		sum += num;
+		count++;
 	}
-	avrg = sum / MAX_INPUT;
-	printf("The average: %f\n", avrg);
+	avg = sum / count;
+	printf("Average: %f", avg);
 	return 0;
 }
-
-

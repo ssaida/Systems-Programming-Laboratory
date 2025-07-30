@@ -1,24 +1,24 @@
 /*
  * reverse.c
  *
- *  Created on: Jun 4, 2025
+ *  Created on: Jul 30, 2025
  *      Author: user
  */
 #include <stdio.h>
 
 int main(){
-	int num;
-	int hondered, tens, onse=0;
+	int num, reverse = 0;
 
-	printf("Enter a number\n");
+	printf("Enter a number to calculate reverse:\n");
 	scanf("%d", &num);
 
-	hondered = num % 100;
-	num /= 100;
-	tens = num % 10;
-	num /= 10;
-	onse += num;
-	printf("%d%d%d\n", onse, tens, hondered);
-
+	while(num > 0){
+		reverse = reverse * 10 + num % 10;
+		num /= 10;
+	}
+	printf("In reverse: %d", reverse);
 	return 0;
 }
+
+
+

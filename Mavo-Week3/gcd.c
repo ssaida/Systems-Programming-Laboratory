@@ -1,33 +1,32 @@
 /*
  * gcd.c
  *
- *  Created on: Jul 9, 2025
+ *  Created on: Jul 29, 2025
  *      Author: user
  */
 
 #include <stdio.h>
 
 int main(){
-	int m, n;
-	int r;
+	int m, n, r;
 
-	printf("Enter two numbers:\n");
-	scanf("%d %d", &m, &n);
+	printf("Enter two numbers to calculate GCD:\n");
+	scanf("%d, %d", &n, &m);
 
 	if(m < n){
 		r = m;
 		m = n;
 		n = r;
-
 	}
 	while(n > 0){
 		r = m % n;
 		m = n;
 		n = r;
 	}
-	printf("The Gcd is %d\n", m);
 
+	printf("Gcd: %d", m);
 	return 0;
+
 }
 
 

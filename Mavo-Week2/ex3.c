@@ -1,10 +1,9 @@
 /*
- * ex2.c
+ * ex3.c
  *
- *  Created on: Jul 7, 2025
+ *  Created on: Jul 28, 2025
  *      Author: user
  */
-
 
 #include <stdio.h>
 
@@ -14,8 +13,14 @@ int main()
 
 	printf("Please enter a character between a-z or A-Z: ");
 	scanf("%c",&ch);
-	printf("Value: %d\nAscii: %c\n", ch, ch);
-	printf("Value: %d\nAscii: %c\n", ch-=32, ch-=32);
+
+	printf("%d\n", ch);
+	printf("%c\n", ch);
+	ch++;
+	if(ch == 'z')
+		printf("%c\n", ch);
+	else
+		printf("There is no letter after z\n");
 
     return 0;
 }
