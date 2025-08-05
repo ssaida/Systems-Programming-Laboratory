@@ -4,11 +4,8 @@
  *  Created on: Jun 22, 2025
  *      Author: user
  */
-
 #include <stdio.h>
 #include "data.h"
-
-
 
 int findLargest(int []);
 void getNumbers(int []);
