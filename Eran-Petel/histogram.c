@@ -1,43 +1,44 @@
 /*
  * histogram.c
  *
- *  Created on: Jun 27, 2025
+ *  Created on: Jul 24, 2025
  *      Author: user
  */
+
+
 #include <stdio.h>
 
-#define MAX_LENGTH 20
+#define MEX_LENGTH 20
 
 int main(){
+
 	int i, count, c;
-	int nchars[MAX_LENGTH];
+	int nchars[MEX_LENGTH];
 
 	count = 0;
 
-	/* init the nchars array */
-	for(i = 1;  i < MAX_LENGTH; ++i)
+	for(i = 0;i< MEX_LENGTH;i++){
 		nchars[i] = 0;
-
-
-	while( (c = getchar()) != EOF){
+	}
+	while((c = getchar()) != EOF){
 		if(c != ' ' && c != '\n' && c != '\t'){
-			++count;
-		}else if(count > 0 && count < MAX_LENGTH){
-			++nchars[count];
+			count++;
+		}else if(count > 0 && count  < MEX_LENGTH){
+			nchars[count]++;
 			count = 0;
 		}
 	}
-
-	/* printf the histogram */
-
+	printf("Print the Histogram:\n");
 	printf("Number of chars in words: \n");
-	for(i = 1; i < MAX_LENGTH; i++){
-		printf("%2d %4d", i, nchars[i]);
+	for(i = 1;i < MEX_LENGTH;i++){
+		printf("%2d %4d ", i, nchars[i]);
 		while(nchars[i] > 0){
 			printf("|");
-			--nchars[i];
+			nchars[i]--;
 		}
-	}
 		printf("\n");
+	}
 	return 0;
 }
+
+

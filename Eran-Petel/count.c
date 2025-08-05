@@ -1,26 +1,27 @@
 /*
  * count.c
  *
- *  Created on: Jun 27, 2025
- *      Author: user
+ *  Created on: Jul 21, 2025
+ *      Author: Samer Saida
  */
-
 #include <stdio.h>
 
 int main(){
-	int c;
+
+	int ch;
 	int ns, nt, nl;
 	ns = nt = nl = 0;
 
-	while( (c = getchar()) != EOF){
-		if(c == ' ')
+	while((ch = getchar()) != EOF){
+		if(ch == ' ')
 			ns++;
-		if(c == '\n')
-			nl++;
-		if(c == '\t')
+		if(ch == '\t')
 			nt++;
+		if(ch == '\n')
+			nl++;
 	}
-	printf("----------------------");
-	printf("\nTabs: %d\nSpaces: %d\nNewLines: %d\n", nt, ns, nl);
+	printf("-----------------------------------\n");
+	printf("Spaces: %d\nTabs: %d\nNew Lines: %d\n", ns, nt, nl);
+
 	return 0;
 }
