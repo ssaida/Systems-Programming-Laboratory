@@ -21,7 +21,7 @@ int main(){
 	avrg = sum / RANGE;
 
 	printf("Average: %f\n", avrg);
-	printf("Numbers above average: \n");
+	printf("Numbers above average: \n\n");
 
 	for(i = 0;i < RANGE;i++){
 		if(arr[i] > avrg)

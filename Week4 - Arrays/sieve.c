@@ -13,7 +13,7 @@ void sieve_of_eratosthenes(int limit) {
 	int i, p;
 
     if (limit < 2 || limit > MAX) {
-        printf("Invalid range. Please select a number between 2 and-%d\n", MAX);
+        printf("Invalid range. Please select a number between 2 and-%d\n\n", MAX);
         return;
     }
     for (i = 0; i <= limit; i++) {
